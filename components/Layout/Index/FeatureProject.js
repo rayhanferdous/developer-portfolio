@@ -5,8 +5,10 @@ function FeatureProject({ flipCard }) {
   return (
     <div
       className={`${
-        flipCard ? "flex-row-reverse" : "bg-cardBg"
-      } h-625  rounded-20px p-60px flex items-center justify-between`}
+        flipCard
+          ? "flex-row-reverse justify-end items-center gap-20"
+          : "bg-cardBg items-center justify-between"
+      } h-625 rounded-20px p-60px flex`}
     >
       <div className="flex flex-col gap-16 w-590">
         <div className="flex flex-col gap-10">

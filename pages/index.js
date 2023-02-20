@@ -1,10 +1,11 @@
-import Head from 'next/head'
+import Head from "next/head";
 import Header from "@/components/Layout/Header";
 import Container from "@/components/Layout/Container";
 import Rectangle from "@/components/Layout/Rectangle";
 import Hero from "@/components/Layout/Index/Hero";
 import FeatureProject from "@/components/Layout/Index/FeatureProject";
 import GapContainer from "@/components/Layout/GapContainer";
+import ProjectShowcase from "@/components/Layout/Index/ProjectShowcase";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
             <GapContainer>
               <FeatureProject />
               <FeatureProject flipCard={"true"} />
+              <ProjectShowcase />
             </GapContainer>
           </Container>
         </div>
