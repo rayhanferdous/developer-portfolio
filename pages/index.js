@@ -26,6 +26,32 @@ export default function Home() {
               <FeatureProject />
               <FeatureProject flipCard={"true"} />
               <ProjectShowcase />
+              <div className="h-[768px] w-full flex items-center justify-center">
+                <div className="w-1/2">
+                  <div>
+                    <p>Experiance</p>
+                    <h2>
+                      My Professional <br />
+                      Experiance
+                    </h2>
+                  </div>
+                  <div>
+                    <div>
+                      <button></button>
+                      <p>Linux System Administrator</p>
+                    </div>
+                    <p>School of Freelancing (Comilla,Bangladesh)</p>
+                    <p>May 2020- Present</p>
+                    <hr />
+                    <p>
+                      Configure & deploy web applications based on the LEMP and
+                      LAMP stacks. Troubleshoot various production environment
+                      issues. Training new candidates on various system
+                      administration processes
+                    </p>
+                  </div>
+                </div>
+              </div>
             </GapContainer>
           </Container>
         </div>

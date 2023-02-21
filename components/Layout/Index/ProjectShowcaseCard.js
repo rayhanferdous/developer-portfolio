@@ -2,9 +2,11 @@ import React from "react";
 
 function ProjectShowcaseCard() {
   return (
-    <div className="h-screen">
+    <div className="h-[70vh]">
       <div className="relative">
-        <div className="absolute w-582 h-352 z-[1] rounded-20px bg-white"></div>
+        <div className="absolute w-582 h-352 z-[10] rounded-20px project-gradient">
+          {/* <img className="z-0 absolute" src="/assets/projects/page-1.png" /> */}
+        </div>
         <div className="absolute top-40 z-[0] w-705 h-469 rounded-20px bg-[#112240]">
           <div className="absolute right-7 top-0 opacity-10 z-10 text-white font-bold text-[158px] leading-snug">
             1

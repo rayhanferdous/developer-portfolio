@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -8,7 +8,23 @@
   body {
     font-family: "Inter", sans-serif;
   }
-  .stack-linear-gradient{
-    background: linear-gradient(180deg, rgba(16, 21, 46, 0) 0%, rgba(16, 21, 46, 0.844531) 32.81%, rgba(16, 21, 46, 0.94) 61.98%, #10152E 80.73%);
+  .stack-linear-gradient {
+    background: linear-gradient(
+      180deg,
+      rgba(16, 21, 46, 0) 0%,
+      rgba(16, 21, 46, 0.844531) 32.81%,
+      rgba(16, 21, 46, 0.94) 61.98%,
+      #10152e 80.73%
+    );
+  }
+  .project-gradient {
+    overflow: hidden;
+    background: #c04848; /* fallback for old browsers */
+    background: linear-gradient(rgba(12, 140, 233, 0.4), rgba(12, 140, 233, 0.4)),
+      url("../public/assets/projects/page-1.png"); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(rgba(12, 140, 233, 0.4), rgba(12, 140, 233, 0.4)),
+      url("../public/assets/projects/page-1.png"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
