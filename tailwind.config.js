@@ -72,6 +72,7 @@ module.exports = {
         cardBg: "#112240",
         cardBgSecondery: "#274B92",
         projectsTitle: "#C7E7FF",
+        'primary-border': "#7590B8",
       },
     },
   },
