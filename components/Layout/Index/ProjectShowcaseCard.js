@@ -4,10 +4,8 @@ function ProjectShowcaseCard() {
   return (
     <div className="h-[70vh]">
       <div className="relative">
-        <div className="absolute w-582 h-352 z-[10] rounded-20px project-gradient">
-          {/* <img className="z-0 absolute" src="/assets/projects/page-1.png" /> */}
-        </div>
-        <div className="absolute top-40 z-[0] w-705 h-469 rounded-20px bg-[#112240]">
+        <div className="absolute xs-min:w-9/12 2xl-min:w-582 h-352 z-[10] rounded-20px project-gradient"></div>
+        <div className="absolute top-40 z-[0] xs-min:w-full 2xl-min:w-705 xs-min:h-fit xs-min:pb-8 xl-2xl:pb-0 xl-2xl:h-469 rounded-20px bg-[#112240]">
           <div className="absolute right-7 top-0 opacity-10 z-10 text-white font-bold text-[158px] leading-snug">
             1
           </div>
@@ -21,7 +19,7 @@ function ProjectShowcaseCard() {
               deployed on Firebase. Used NodeJS and ExpressJS to create
               personalized API on the server-side.
             </p>
-            <div className="flex items-center justify-between">
+            <div className="flex items-center gap-10 xs-min:flex-col md-lg:flex-row md-lg:justify-between">
               <div className="flex gap-5">
                 {Array.from({ length: 4 }, (v, i) => (
                   <img key={i} src={`/assets/hero/stack/image ${i + 3}.png`} />

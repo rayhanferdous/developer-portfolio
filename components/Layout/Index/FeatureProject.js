@@ -1,4 +1,5 @@
 import React from "react";
+import Rectangle from "../Rectangle";
 import TechnologyCard from "./TechnologyCard";
 
 function FeatureProject({ flipCard }) {
@@ -6,7 +7,7 @@ function FeatureProject({ flipCard }) {
     <div
       className={`${
         flipCard
-          ? "flex-row-reverse justify-end items-center gap-20"
+          ? "flex-row-reverse justify-end items-center gap-20 relative"
           : "bg-cardBg items-center justify-between"
       } h-625 rounded-20px p-60px flex`}
     >
@@ -44,6 +45,7 @@ function FeatureProject({ flipCard }) {
         </button>
       </div>
       <div className="rounded-20px h-530px w-514px bg-cardBgSecondery"></div>
+      <Rectangle className={"-top-[10%] -left-[70%]"} />
     </div>
   );
 }

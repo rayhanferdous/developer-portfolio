@@ -10,6 +10,16 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        "xs-min": { min: "0px" },
+        "sm-min": { min: "350px" },
+        "md-min": { min: "640px" },
+        "md-lg": { min: "650px" },
+        "lg-min": { min: "1024px" },
+        "xl-min": { min: "1302px" },
+        "xl-2xl": { min: "1390px" },
+        "2xl-min": { min: "1525px" },
+      },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
@@ -72,7 +82,8 @@ module.exports = {
         cardBg: "#112240",
         cardBgSecondery: "#274B92",
         projectsTitle: "#C7E7FF",
-        'primary-border': "#7590B8",
+        "primary-border": "#7590B8",
+        h6: "#CCD6F6",
       },
     },
   },
