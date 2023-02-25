@@ -10,6 +10,8 @@ import Experiance from "@/components/Layout/Index/Experiance";
 import Footer from "@/components/Layout/Index/Footer";
 
 export default function Home() {
+ 
+  
   return (
     <>
       <Head>

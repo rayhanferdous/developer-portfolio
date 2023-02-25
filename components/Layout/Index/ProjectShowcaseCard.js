@@ -2,7 +2,7 @@ import React from "react";
 
 function ProjectShowcaseCard() {
   return (
-    <div className="h-[70vh]">
+    <div className="xs-min:h-full lg-min:h-[628px]">
       <div className="relative">
         <div className="absolute xs-min:w-9/12 2xl-min:w-582 h-352 z-[10] rounded-20px project-gradient"></div>
         <div className="absolute top-40 z-[0] xs-min:w-full 2xl-min:w-705 xs-min:h-fit xs-min:pb-8 xl-2xl:pb-0 xl-2xl:h-469 rounded-20px bg-[#112240]">

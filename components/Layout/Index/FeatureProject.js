@@ -5,6 +5,7 @@ import TechnologyCard from "./TechnologyCard";
 function FeatureProject({ flipCard }) {
   return (
     <div
+      data-aos={flipCard ? "fade-right" : "fade-left"}
       className={`${
         flipCard
           ? "flex-row-reverse justify-end items-center gap-20 relative"

@@ -1,11 +1,16 @@
 import DocumentSvg from "@/components/Svg/DocumentSvg";
 import React from "react";
 import Rectangle from "../Rectangle";
+import Typed from "react-typed";
 
 function Hero() {
+
   return (
     <div className="flex items-center xs-min:flex-col-reverse xl-min:flex-row xl-min:justify-between  relative">
-      <div className="flex flex-col gap-16 mt-40 xs-min:justify-center xs-min:items-center xl-min:justify-start xl-min:items-start">
+      <div
+        data-aos={"fade-right"}
+        className="flex flex-col gap-16 mt-40 xs-min:justify-center xs-min:items-center xl-min:justify-start xl-min:items-start"
+      >
         <div className="flex flex-col gap-10 xs-min:justify-center xs-min:items-center xl-min:justify-start xl-min:items-start">
           <div className="flex flex-col gap-10 xs-min:justify-center xs-min:items-center xl-min:justify-start xl-min:items-start">
             <div className="flex flex-col gap-6">
@@ -14,7 +19,15 @@ function Hero() {
                 Umar
               </h3>
               <h2 className="font-bold text-56 text-btnPrimary">
-                Full Stack Developer |
+                <Typed
+                  loop
+                  strings={[
+                    "Full Stack Developer",
+                    "React.Js Developer",
+                    "Next.Js Developer",
+                  ]}
+                  typeSpeed={40}
+                />
               </h2>
             </div>
             <p className="text-lg text-secondery xs-min:w-1/2 xl-min:w-full">
@@ -36,7 +49,12 @@ function Hero() {
           </div>
         </div>
       </div>
-      <img className="" src="/assets/hero/model.png" alt="" />
+      <img
+        data-aos={"fade-left"}
+        className="w-[636px]"
+        src="/assets/hero/model.png"
+        alt=""
+      />
       <Rectangle className={"-bottom-[15%] -right-[15%]"} />
     </div>
   );
